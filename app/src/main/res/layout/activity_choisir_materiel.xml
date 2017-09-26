@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/large_margin12"
+    android:layout_marginRight="@dimen/large_margin12"
+    android:layout_marginTop="@dimen/large_margin12"
+    tools:context="com.example.eleves.android_comptoir_grasset.ChoisirMateriel">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTop"
+         >
+
+    <TextView
+        android:text="CHOISIR MATÉRIEL"
+        android:textSize="@dimen/tx_size20"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin35"
+        android:text="MATÉRIEL" />
+
+
+
+        <Spinner
+            android:id="@+id/spin_materiel"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_width="176dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginBottom="@dimen/margin30"
+            android:entries="@array/materiel"
+            ></Spinner>
+
+
+
+        <ListView
+
+            android:id="@+id/list_materiel"
+            android:layout_width="match_parent"
+            android:layout_height="259dp"></ListView>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/btn_envoyer"
+        android:layout_width="@dimen/small_button_width"
+        android:layout_height="@dimen/small_button_height"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:layout_marginRight="@dimen/margin35"
+        android:text="ENVOYER DEMANDE"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin30" />
+
+
+</RelativeLayout>
